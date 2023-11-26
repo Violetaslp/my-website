@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CV</title>
+    <link rel="icon" href="/Users/violeta/Documents/ИКТ/icons8-звезда-с-заливкой-50.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+
+    <div class="colored-section">
+        <div class="avatar-container">
+            <div class="avatar">
+                <img src="94D37A97-DEAC-4C87-BF2D-1B41244CC8FC_1_201_a.jpeg" alt="Profile Picture">
+            </div>
+        </div>
+        <div class="custom-text4">
+            <br><br><br><br>
+            <p>INTRO</p>
+            <br><br><br><br><br><br>
+            <p>EXPERTISE</p>
+        </div>
+    </div>
+
+    <div class="gray-background">
+        <div class="text-container">
+            <p>
+                <span class="custom-text2">Violeta</span><br>
+                <span class="custom-text"> SLEPOKUROVA </span><br>
+                <span class="custom-text3"> Business analyst </span>
+                <span class="line-cc">
+                    <a href="https://www.instagram.com/im__violeta" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="grey" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <!-- Instagram SVG path here -->
+                        </svg>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=87074521585" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="grey" class="bi bi-telephone-plus" viewBox="0 0 16 16">
+                            <!-- WhatsApp SVG path here -->
+                        </svg>
+                    </a>
+                    <a href="https://t.me/Vi_shnya_gnton" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="grey" class="bi bi-telegram" viewBox="0 0 16 16">
+                            <!-- Telegram SVG path here -->
+                        </svg>
+                    </a>
+                </span>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <div class="column">
+                <p>Location <br> Kazakhstan</p>
+            </div>
+            <div class="column">
+                <p>Phone number <br> 8 (707) 452-15-85</p>
+            </div>
+            <div class="column">
+                <p>Email <br> slepokurovavioleta@gmail.com</p>
+            </div>
+        </div>
+
+        <div>
+            <p class="form-intro">
+                <br><br>I am Violeta and I would like to present you with my professional resume. With over 7 years of experience in the field of business analysis, I strive for continuous growth and development, as well as achieving outstanding results in my career.
+                <br><br>In my work, I adhere to the principles of efficiency, responsibility, and continuous learning. My goal is not just to complete tasks but to achieve outstanding quality and find innovative solutions to solve complex problems.
+            </p>
+        </div>
+
+        <div class="container2">
+            <div class="column">
+                <ul>
+                    <li>
+                        <span class="highlight">01 </span>
+                        <span class="highlight2">ADVANCED CSS</span>
+                        <br><br> My goal is to create beautiful and functional websites using my skills.
+                    </li>
+                    <li>
+                        <span class="highlight">02 </span>
+                        <span class="highlight2">FRONT-END DESIGN</span>
+                        <br><br> I strive to not only create beautiful designs but also provide an optimal user experience on websites.
+                    </li>
+                    <li>
+                        <span class="highlight">03 </span>
+                        <span class="highlight2">ANALYSIS</span>
+                        <br><br> My skills in data analysis and strategic planning help make informed decisions and achieve business goals.
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li>
+                        <span class="highlight">04 </span>
+                        <span class="highlight2">WORDPRESS</span>
+                        <br><br> Ready to create and manage websites on WordPress.
+                    </li>
+                    <li>
+                        <span class="highlight">05 </span>
+                        <span class="highlight2">PROGRAMMER OF C++</span>
+                        <br><br> My skills allow me to create effective and innovative solutions.
+                    </li>
+                    <li>
+                        <span class="highlight">06 </span>
+                        <span class="highlight2">WEB DEVELOPER</span>
+                        <br><br> My skills in HTML, CSS, JavaScript allow me to create creative and functional websites.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="table-container">
+      <table>
+          <thead>
+              <tr>
+                  <th>Google</th>
+                  <th>Amazon</th>
+                  
+            
+                 
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>I recommend Violet for business analysis based on our successful collaboration at Google. His/her professionalism, creativity, and leadership qualities have made him/her a valuable member of the team. His/her involvement in platform development has demonstrated outstanding skills and I am confident that he/she will be able to make a significant contribution to your company.</td>
+                  <td>The history of work in the field of business analysis is impressive. From 2025 to present, he/she is actively involved in business process analysis, providing valuable insights and recommendations. His/her ability to interact with teams and translate complex business requirements into understandable development tasks highlights his/her important role in the company's successful projects.</td>
+                  
+                  
+
+                  
+              </tr>
+             
+          </tbody>
+      </table>
+  </div>
+  <div class="comment-input-container">
+    <label for="comment">Comment:</label>
+    <input type="text" id="comment" name="comment">
+    <button onclick="addComment()">Add Comment</button>
+  </div>
+
+  <div class="comment-section">
+      <h2>Comments</h2>
+      <ul id="commentList"></ul>
+  </div>
+
+
+  <script>
+    function addComment() {
+        var commentInput = document.getElementById("comment");
+        var commentText = commentInput.value;
+
+        if (commentText.trim() !== "") {
+            var commentList = document.getElementById("commentList");
+            var listItem = document.createElement("li");
+            listItem.textContent = "User: " + commentText;
+            commentList.appendChild(listItem);
+
+            // Reverse the order of list items
+            var listItems = commentList.getElementsByTagName("li");
+            for (var i = listItems.length - 1; i >= 0; i--) {
+                commentList.appendChild(listItems[i]);
+            }
+
+            // Clear the input field after adding a comment
+            commentInput.value = "";
+        }
+    }
+</script>
+
+
+</body>
+</html>
