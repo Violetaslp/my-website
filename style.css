@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+}
+
+.avatar-container {
+    width: 200px; 
+    height: 200px; 
+    padding: 80px; 
+}
+
+.avatar {
+    width: 230px; 
+    height: 230px;
+    border-radius: 150%; 
+    border: 2px solid #fff; 
+    overflow: hidden; 
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.colored-section {
+    background-color: #EFEFEF; 
+    width: 30%; 
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.custom-text {
+    font-size: 50px;
+    color: #ffc801; 
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    z-index: 2;
+}
+
+.custom-text2 {
+    font-size: 40px; 
+    color: #b7b7b7; 
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    z-index: 2;
+}
+
+.custom-text3 {
+    font-size: 20px; 
+    color: #b7b7b7; 
+    font-weight: bold;
+    text-align: right;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.text-container {
+    margin-top: 100px; 
+    margin-left: 30%;
+}
+
+.line-cc {
+    float: right;
+}
+
+hr {
+    color: rgb(231, 231, 231); 
+    width: 65%; 
+    border: 3px solid rgb(227, 227, 227);
+}
+
+.container {
+    display: flex; 
+    margin-left: 35%; /* Adjusted the margin */
+    max-width: 65%; /* Added max-width */
+}
+
+.column {
+    flex: 1; 
+    padding: 2px; 
+    color: rgb(158, 158, 158);
+    font-weight: bold;
+}
+
+.custom-text4 {
+    font-size: 20px; 
+    color: #949494; 
+    font-weight: bold;
+    margin-bottom: 1500px;
+    background-color: #EFEFEF;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-intro {
+    font-size: 20px; 
+    color: #b1b1b1; 
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px;
+    
+    position: relative;
+    z-index: 2;
+    max-width: 65%; /* Added max-width to keep it on the right side */
+    margin-left: auto; /* Align to the right */
+}
+
+.container2 {
+    display: flex; 
+    margin-left: 30%;
+}
+
+.column2 {
+    flex: 1; 
+    padding: 10px; 
+}
+
+.column ul {
+    list-style-type: decimal; 
+}
+
+.highlight {
+    color: rgb(255, 200, 0); 
+    font-weight: bold;
+}
+
+.highlight2 {
+    color: rgb(94, 94, 94); 
+    font-weight: bold;
+}
+.table-container {
+    width: 65%; /* Adjust the width as needed */
+    margin-left: 35%; /* Align to the right */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #fff; /* Set background color for the table container */
+    position: relative;
+    z-index: 2; /* Ensure the table appears above the gray section */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.comment-input-container {
+    width: 65%; /* Adjust the width as needed */
+    margin-left: 35%; /* Align to the right */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #fff; /* Set background color for the input container */
+    position: relative;
+    z-index: 2; /* Ensure the input appears above the gray section */
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+  }
